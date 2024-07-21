@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>TextMasters - TextBot</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="../static/assets/css/owl.css">
+    <link rel="stylesheet" href="../static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <style>
+      #loading-animation {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+      }
+
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+    </style>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <div class="col-4">
+                      <a href="/" class="logo">
+                          <img src="../static/assets/images/logo.png" alt="">
+                      </a>
+                    </div>
+                    <!-- ***** Logo End ***** -->
+
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/browse">Browse</a></li>
+                        <li><a href="/details">Details</a></li>
+                        <li><a href="/feedback">Feedback <img src="../static/assets/images/profile-header.jpg" alt=""></a></li>
+                    </ul>   
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  <div id="loading-animation" class="loading">
+    <div class="loader"></div>
+  </div> 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Featured Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="feature-banner header-text">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <!-- <img src="../static/assets/images/feature-left.jpg" alt="" style="border-radius: 23px;"> -->
+                    <figure style="position: relative; text-align: center;">
+                      <img src="../static/assets/images/feature-left.jpg" alt="Your Image" style="width: 100%; height: auto; display: block;">
+                      <figcaption style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 60px; font-weight: bold;">TextBot</figcaption>
+                    </figure><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Featured End ***** -->
+
+          <!-- ***** Details Start ***** -->
+          <div class="game-details text-center">
+            <div class="row justify-content-center"> <!-- Center everything -->
+                <div class="col-lg-8">
+                    <!-- Form Start -->
+                    <form action='result1_textbot' class='main-form needs-validation' method="POST" enctype="multipart/form-data" id="formid">
+                        <div class="row">
+                            <div class="col">
+                                <div class='form-group'>
+                                    <h4><label for="originalText">Original Text</label></h4>
+                                    <textarea name="originalText" id="originalText" class="form-control mt-3" rows="4"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center"> <!-- Center the button -->
+                            <div class="main-border-button text-center">
+                                <button type="submit" class="btn btn-primary btn-block col-lg-4">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Form End -->
+                </div>
+            </div>
+          </div>
+          <!-- ***** Details End ***** -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Made by Nilesh Popli. All rights reserved. 
+          <br><a href="https://github.com/adrenex" target="_blank" title="Github">Adrenex :)</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../static/assets/js/isotope.min.js"></script>
+  <script src="../static/assets/js/owl-carousel.js"></script>
+  <script src="../static/assets/js/tabs.js"></script>
+  <script src="../static/assets/js/popup.js"></script>
+  <script src="../static/assets/js/custom.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#formid").on("submit", function () {
+        $("#loading-animation").show();
+      });
+    });
+  </script>
+
+
+  </body>
+
+</html>
